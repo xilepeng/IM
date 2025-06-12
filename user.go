@@ -108,7 +108,7 @@ func (this *User) DoMessage(msg string) {
 			this.sendMsg("无消息内容，请重发\n")
 			return
 		}
-		remoteUser.sendMsg(this.Name + "对您说：" + content)
+		remoteUser.sendMsg(this.Name + "对您说：" + content + "\n")
 	} else {
 		// 将得到的消息广播
 		this.server.BroadCast(this, msg)
